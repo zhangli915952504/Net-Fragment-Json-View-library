@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sliding_pc_main_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新闻客户端"
+
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/fragment_merchant_picture_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="图片新闻"/>
+
+    <Button
+        android:id="@+id/fragment_merchant_video_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="视频新闻"/>
+
+    <Button
+        android:id="@+id/fragment_merchant_music_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="音乐新闻"/>
+</LinearLayout>

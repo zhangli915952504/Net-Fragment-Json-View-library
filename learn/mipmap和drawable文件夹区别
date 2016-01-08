@@ -1,0 +1,19 @@
+###mipmap和drawable文件夹区别
+
+android 在 API level 17 加入了 mipmap 技术，对 bitmap 图片的渲染支持 mipmap 技术，来提高渲染的速度和质量。
+
+mipmap 是一种很早就有的技术了，翻译过来就是纹理映射技术。android 中的 mipmap 技术主要为了应对图片大小缩放的处理，
+在android 中我们提供一个 bitmap 图片，由于应用的需要（比如缩放动画），可能对这个 bitmap 进行各种比例的缩小，
+为了提高缩小的速度和图片的质量，android 通过 mipmap 技术提前对按缩小层级生成图片预先存储在内存中，这样就提高了图片渲染的速度和质量。
+
+api 中通过 Bitmap 的 public final void setHasMipMap (boolean hasMipMap) 方法可以让系统渲染器尝试开启 Bitmap 的 mipmap 技术。
+但是这个方法只能建议系统开启这个功能，至于是否正真开启，还是由系统决定。
+
+res 目录下面 mipmap 和 drawable 的区别也就是上面这个设置是否开启的区别。mipmap 目录下的图片默认 setHasMipMap 为 true，
+drawable 默认 setHasMipMap 为 false。
+
+下面是引用自 google 官方的描述
+
+Mipmapping for drawables
+Using a mipmap as the source for your bitmap or drawable is a simple way to provide a quality image and various image scales, which can be particularly useful if you expect your image to be scaled during an animation.
+Android 4.2 (API level 17) added support for mipmaps in the Bitmap class—Android swaps the mip images in your Bitmap when you’ve supplied a mipmap source and have enabled setHasMipMap(). Now in Android 4.3, you can enable mipmaps for a BitmapDrawable object as well, by providing a mipmap asset and setting the android:mipMap attribute in a bitmap resource file or by calling hasMipMap().

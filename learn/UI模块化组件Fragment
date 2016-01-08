@@ -1,0 +1,16 @@
+1.什么是Fragment
+  碎片，UI模块化组件，轻量的activity
+
+2.为什么要引入Framgent
+
+3.Fragment生命周期
+
+4.Fragment交互
+  Activity->Fragment  setArguments   getArguments
+  Framgent->Activity  接口回调
+
+5.Fragment栈
+
+6.Fragment子类
+  ListFragment
+  DialogFragment

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Json</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_list_json">ListJsonActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_merchant">MerchantActivity</string>
+    <string name="title_activity_frist__txt_">Frist_Txt_Activity</string>
+    <string name="title_activity_pictrue">PictrueActivity</string>
+    <string name="title_activity_vidio">VidioActivity</string>
+    <string name="title_activity_music">MusicActivity</string>
+</resources>

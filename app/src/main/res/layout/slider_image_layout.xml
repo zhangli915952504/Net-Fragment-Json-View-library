@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.scxh.slider.library.SliderLayout
+        android:id="@+id/slider_imager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        custom:auto_cycle="true" />
+
+    <com.scxh.slider.library.Indicators.PagerIndicator
+        android:id="@+id/custom_pagerindicator"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="right|bottom"
+        custom:selected_color="#00ff00"
+        custom:selected_height="6dp"
+        custom:selected_padding_left="5dp"
+        custom:selected_padding_right="5dp"
+        custom:selected_width="6dp"
+        custom:selected_padding_bottom="8dp"
+        custom:shape="oval"
+        custom:unselected_height="6dp"
+        custom:unselected_color="#0095BF"
+        custom:unselected_padding_bottom="8dp"
+        custom:unselected_padding_left="5dp"
+        custom:unselected_padding_right="5dp"
+        custom:unselected_width="6dp" />
+</RelativeLayout>
